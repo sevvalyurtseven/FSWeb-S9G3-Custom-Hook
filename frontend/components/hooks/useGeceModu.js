@@ -1,7 +1,7 @@
 import { useLocalStorage } from "./useLocalStorage";
 
-export const useGeceModu = (initialValue) => {
-  const [geceModu, setGeceModu] = useLocalStorage("geceModu", initialValue);
+export const useGeceModu = (key, initialValue) => {
+  const [geceModu, setGeceModu] = useLocalStorage(key, initialValue);
 
   //geceModu state'i ve state'i değiştirme işlemlerini yapacak fonksiyon
 

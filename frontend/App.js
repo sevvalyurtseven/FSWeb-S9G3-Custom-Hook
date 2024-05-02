@@ -9,7 +9,7 @@ import { useAxios } from "./components/hooks/useAxios";
 const App = () => {
   //const [coinData, setCoinData] = useState([]);
   //const [geceModu, setGeceModu] = useState(false);
-  const [geceModu, setGeceModu] = useGeceModu(false);
+  const [geceModu, setGeceModu] = useGeceModu("geceModu", false);
 
   const [coinData, error, loading, getData] = useAxios(
     "get",
